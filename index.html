@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agence des petites explorateurs — Ottawa</title>
+  <meta name="description" content="Garderie et programmes d'éveil à Ottawa — Agence des petites explorateurs" />
+  <style>
+    :root{--accent:#ff8c42;--muted:#6b6b6b;--bg:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#222}
+    nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));backdrop-filter: blur(6px);z-index:30}
+    .logo{font-weight:700;color:var(--accent)}
+    .navlinks a{margin-left:18px;color:#222;text-decoration:none;font-weight:600}
+    header.hero{height:70vh;min-height:420px;display:flex;align-items:center}
+    .hero-inner{max-width:1100px;margin:0 auto;padding:40px;display:flex;gap:30px;align-items:center}
+    .hero-card{background:rgba(255,255,255,0.9);padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.08);max-width:620px}
+    h1{font-size:32px;margin:0 0 10px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+    .bg-img{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.65);z-index:0}
+    main{padding:60px 20px 120px}
+    section{max-width:1100px;margin:0 auto;padding:48px 0;border-bottom:1px solid #f2f2f2}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{padding:18px;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    footer{padding:30px 20px;text-align:center;color:var(--muted)}
+    /* responsive */
+    @media (max-width:800px){.hero-inner{flex-direction:column}.hero-card{max-width:100%}nav{padding:10px}}
+    /* simple map container */
+    .map{height:360px;border-radius:10px;overflow:hidden}
+    .program-list{list-style:none;padding:0;margin:0}
+    .program-list li{padding:10px 0;border-bottom:1px dashed #eee}
+    .apply-btn{display:inline-block;padding:8px 12px;border-radius:8px;border:2px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Agence des <span style="color:#333">petites explorateurs</span></div>
+    <div class="navlinks">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#programmes">Nos programmes</a>
+      <a href="#emplacement">Emplacement</a>
+      <a href="#carriere">Carrières</a>
+      <a href="#ressources">Ressources</a>
+    </div>
+  </nav>
+
+  <header id="accueil" class="hero">
+    <div class="bg-img" style="background-image: url('https://source.unsplash.com/1600x900/?children,play,park');"></div>
+    <div class="hero-inner">
+      <div class="hero-card">
+        <h1>Bienvenue à l'Agence des petites explorateurs — Ottawa</h1>
+        <p class="lead">Un lieu chaleureux où l'éveil, la sécurité et la curiosité des enfants sont au cœur de notre action. Programmes bilingues, sorties éducatives et équipes certifiées.</p>
+        <a class="cta" href="#programmes">Découvrir nos programmes</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Notre mission</h3>
+          <p>Fonder un espace sûr et stimulant à Ottawa pour les enfants de 6 mois à 5 ans, favorisant le développement moteur, socio-affectif et cognitif à travers des activités ludiques, sensorielles et d'exploration.</p>
+        </div>
+        <div class="card">
+          <h3>Nos valeurs</h3>
+          <ul>
+            <li>Sécurité et bien-être</li>
+            <li>Apprentissage par le jeu</li>
+            <li>Inclusion et diversité</li>
+            <li>Partenariat avec les familles</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>L'équipe</h3>
+          <p>Educateurs formés en petite enfance, personnel bilingue (français/anglais), et intervenants spécialisés pour les besoins particuliers. Nous priorisons la formation continue et la bienveillance professionnelle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programmes">
+      <h2>Nos programmes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Explorateurs Bébé (6-18 mois)</h3>
+          <p>Activités sensorielles, routines douces, éveil du langage et découvertes motrices adaptées aux tout-petits.</p>
+        </div>
+        <div class="card">
+          <h3>Petits Aventuriers (18-36 mois)</h3>
+          <p>Jeux collectifs, atelier d'arts, premiers projets de socialisation et parcours moteur.</p>
+        </div>
+        <div class="card">
+          <h3>Pré-Explorateurs (3-5 ans)</h3>
+          <p>Préparation à la maternelle : alphabétisation ludique, mathématiques précoce et projets nature.</p>
+        </div>
+        <div class="card">
+          <h3>Programme extrascolaire</h3>
+          <p>Ateliers bilingues après l'école incluant musique, lecture animée et activités sportives légères.</p>
+        </div>
+      </div>
+      <div style="margin-top:18px">
+        <h4>Horaires & inscriptions</h4>
+        <p class="lead">Inscriptions ouvertes — places limitées. Nous proposons des journées complètes et demi-journées, ainsi que des forfaits saisonniers.</p>
+        <a class="apply-btn" href="#emplacement">Demander une visite</a>
+      </div>
+    </section>
+
+    <section id="emplacement">
+      <h2>Emplacement</h2>
+      <p>Nous sommes situés à Ottawa — accessible en transport en commun et proche des quartiers familiaux. Adresse exacte fournie lors de la prise de rendez-vous pour des raisons de sécurité.</p>
+      <div class="map" style="margin-top:12px">
+        <!-- Map iframe centered on Ottawa; user can replace with exact address -->
+        <iframe width="100%" height="100%" frameborder="0" style="border:0"
+          src="https://www.google.com/maps?q=Ottawa+Canada&output=embed" allowfullscreen></iframe>
+      </div>
+      <p style="margin-top:8px;color:var(--muted)">Heures: Lun–Ven 7:30–18:00 | Contact: info@petitesexplorateurs.ca | Tél: (613) 555-0123</p>
+    </section>
+
+    <section id="carriere">
+      <h2>Carrières</h2>
+      <p>Rejoignez une équipe engagée et bienveillante. Nous recrutons des éducateurs(trices) en petite enfance, aides-éducateurs et personnel administratif.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Poste: Éducateur(trice) — temps plein</h3>
+          <p>Exigences: diplôme en éducation de la petite enfance, expérience avec les 0–5 ans, bilinguisme un atout.</p>
+          <p><strong>Comment postuler:</strong> Envoyez CV + lettre de motivation à <a href="mailto:jobs@petitesexplorateurs.ca">jobs@petitesexplorateurs.ca</a></p>
+        </div>
+        <div class="card">
+          <h3>Poste: Aide-éducateur(trice)</h3>
+          <p>Exigences: certificat de premiers secours, patience et sens de l'organisation. Formation offerte en interne.</p>
+          <p><a class="apply-btn" href="mailto:jobs@petitesexplorateurs.ca">Postuler</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ressources">
+      <h2>Ressources pour les familles</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Conseils développementaux</h3>
+          <p>Guides simples sur sommeil, alimentation, jalons de développement et activités à faire à la maison.</p>
+        </div>
+        <div class="card">
+          <h3>Calendrier d'activités</h3>
+          <p>Téléchargez le planning mensuel des activités, sorties et ateliers.</p>
+        </div>
+        <div class="card">
+          <h3>Liens utiles</h3>
+          <ul>
+            <li>Santé publique Ottawa</li>
+            <li>Ressources parentales en français/anglais</li>
+            <li>Guide de préparation à la maternelle</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Agence des petites explorateurs — Ottawa • Créé avec ❤️</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for nav
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click', e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+  </script>
+</body>
+</html>
